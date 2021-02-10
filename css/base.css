@@ -105,6 +105,7 @@ body {
 
 footer {
     height: 252px;
+    width: 1600px;
     background: var(--color-footback);
 }
 
