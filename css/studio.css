@@ -1,0 +1,71 @@
+/* 
+    Font Styles:
+    Roboto 900;
+*/
+
+.hero {
+    background-color: var(--color-footback);
+}
+
+.hero>h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-antiaccent);
+}
+
+.hero>a {
+    position: absolute;
+    width: 136px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-antiaccent);
+    background-color: var(--color-accent);
+    padding: 10px 32px 10px 32px;
+}
+
+.work>h2 {
+    position: absolute;
+    top: -1984px;
+    left: -1984px;
+}
+
+.work h3 {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--color-headlight);
+}
+
+.super {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    color: var(--color-headlight);
+}
+
+.team {
+    background-color: var(--color-team);
+}
+
+.team h3 {
+    font-weight: 500;
+    color: var(--color-headlight);
+}
+
+.team h3,
+.team p {
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+}
