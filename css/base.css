@@ -1,6 +1,6 @@
 /* 
     Font Styles:
-    Roboto 400, 500;
+    Roboto 400, 500, 900;
     Raleway 700;
 */
 
@@ -13,31 +13,31 @@
     --color-footback: #2F303A;
     --color-antifootback: rgba(255, 255, 255, 0.6);
     --color-team: #F5F4FA;
-    --left: 215px;
+    --color-light-border: #EEEEEE;
 }
 
 * {
-    box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
     color: unset;
-    margin: 0;
-    padding: 0;
-}
-
-address {
-    font-style: unset;
 }
 
 *:visited {
     color: unset;
 }
 
+address {
+    font-style: unset;
+}
+
+html {
+    font-size: calc(100vw * 0.00875);
+}
+
 body {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-text);
@@ -46,15 +46,8 @@ body {
 
 /* header */
 
-.head * {
-    display: inline-block;
-}
-
-.head {
-    width: 1600px;
-    height: 80px;
+header {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-headlight);
@@ -64,7 +57,7 @@ body {
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 1.85714286em;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--color-headlight);
@@ -74,62 +67,27 @@ body {
     color: var(--color-accent);
 }
 
-.head .logo {
-    padding: 24px 0 0 var(--left);
-    margin-right: 93px;
-}
-
-.head-nav {
-    width: 50%;
-}
-
-.head-nav .item {
-    margin-right: 50px;
-}
-
-.item.last {
-    margin: 0;
-}
-
-.head-addr {
-    padding-left: 328px;
+address {
     color: var(--color-text);
-}
-
-.head-addr a.first {
-    margin-right: 50px;
 }
 
 
 /* footer */
 
 footer {
-    height: 252px;
-    width: 1600px;
     background: var(--color-footback);
 }
 
 footer .logo {
     color: var(--color-antiaccent);
-    margin: 0 0 20px 0;
-}
-
-footer div {
-    padding: 60px 0 0 var(--left);
 }
 
 footer a {
-    display: block;
-    margin: 0 0 9px 0;
     color: var(--color-antifootback);
 }
 
-footer .first {
+footer address a:first-child {
     color: var(--color-antiaccent);
-}
-
-footer .last {
-    margin: 0;
 }
 
 
@@ -137,7 +95,7 @@ footer .last {
 
 a:hover,
 a:focus,
-a.logo:hover,
-a.logo:focus {
+a.logo:focus,
+a.logo:hover {
     color: var(--color-accent);
 }
